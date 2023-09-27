@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   safe-parse-payload:
-    specifier: 1.0.4
-    version: 1.0.4
+    specifier: 1.0.5
+    version: 1.0.5
   ts-node:
     specifier: ^10.9.1
     version: 10.9.1(@types/node@20.7.0)(typescript@5.2.2)
@@ -25,62 +25,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
-    dev: false
-
-  /@decs/typeschema@0.11.7(zod@3.22.2):
-    resolution: {integrity: sha512-GfeuQNvf1Hfp8qdL6JQEEpTZ+Nl1cmOSy19nlF+98e06oZ4/S8PWjpTGaX2N1mXHOrRwkpjWOY97X+xyczlDfQ==}
-    peerDependencies:
-      '@deepkit/type': ^1.0.1-alpha.97
-      '@effect/data': ^0.18.6
-      '@effect/schema': ^0.36.5
-      '@sinclair/typebox': ^0.31.15
-      ajv: ^8.12.0
-      arktype: ^1.0.21-alpha
-      fp-ts: ^2.16.1
-      io-ts: ^2.2.20
-      joi: ^17.10.2
-      ow: ^0.28.2
-      runtypes: ^6.7.0
-      superstruct: ^1.0.3
-      valibot: ^0.17.0
-      vite: ^4.4.9
-      yup: ^1.2.0
-      zod: ^3.22.2
-    peerDependenciesMeta:
-      '@deepkit/type':
-        optional: true
-      '@effect/data':
-        optional: true
-      '@effect/schema':
-        optional: true
-      '@sinclair/typebox':
-        optional: true
-      ajv:
-        optional: true
-      arktype:
-        optional: true
-      fp-ts:
-        optional: true
-      io-ts:
-        optional: true
-      joi:
-        optional: true
-      ow:
-        optional: true
-      runtypes:
-        optional: true
-      superstruct:
-        optional: true
-      valibot:
-        optional: true
-      vite:
-        optional: true
-      yup:
-        optional: true
-      zod:
-        optional: true
-    dependencies:
-      zod: 3.22.2
     dev: false
 
   /@jridgewell/resolve-uri@3.1.1:
@@ -147,27 +91,10 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: false
 
-  /safe-parse-payload@1.0.4:
-    resolution: {integrity: sha512-a8bgInS7Wl8CykE7wK6ras5cpeJjWtwCXRVPdQAzoEiBSY8+gKh7kkQT2WrCB0hkcs+VQm0A1pBbyRk8J+SsHA==}
+  /safe-parse-payload@1.0.5:
+    resolution: {integrity: sha512-HqJ+bWL9NT2YK5gFX3nNK/M+lgcYQHNG0FW15bPdtaS3SsMSpVBulOpDarH01A+yI0UU9DncQNS0cmTjzkHKmw==}
     dependencies:
-      '@decs/typeschema': 0.11.7(zod@3.22.2)
-      zod: 3.22.2
-    transitivePeerDependencies:
-      - '@deepkit/type'
-      - '@effect/data'
-      - '@effect/schema'
-      - '@sinclair/typebox'
-      - ajv
-      - arktype
-      - fp-ts
-      - io-ts
-      - joi
-      - ow
-      - runtypes
-      - superstruct
-      - valibot
-      - vite
-      - yup
+      zod: 3.21.4
     dev: false
 
   /ts-node@10.9.1(@types/node@20.7.0)(typescript@5.2.2):
@@ -214,6 +141,10 @@ packages:
   /yn@3.1.1:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
+    dev: false
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
 
   /zod@3.22.2:

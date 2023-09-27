@@ -1,11 +1,10 @@
-import type { Infer, InferIn, Schema } from "@decs/typeschema";
-import { validate } from "@decs/typeschema";
+import { z } from "zod";
 
-export async function safeParsePayload<T extends Schema>(
+export function safeParsePayload<T extends z.ZodTypeAny>(
   schema: T,
   payload: unknown
-): Promise<Infer<T> | undefined> {
-  const result = await validate(schema, payload);
+): z.output<T> | undefined {
+  const result = schema.safeParse(payload);
 
   if (result.success) {
     return result.data;
@@ -14,11 +13,24 @@ export async function safeParsePayload<T extends Schema>(
   return undefined;
 }
 
-export async function safeParsePayloadInfer<T extends Schema>(
+export function safeParsePayloadInfer<T extends z.ZodTypeAny>(
   schema: T,
   payload: unknown
-): Promise<InferIn<T> | undefined> {
-  const result = await validate(schema, payload);
+): z.infer<T> | undefined {
+  const result = schema.safeParse(payload);
+
+  if (result.success) {
+    return result.data;
+  }
+
+  return undefined;
+}
+
+export function safeParsePayloadVariant<T>(
+  schema: z.Schema<T>,
+  payload: unknown
+): T | undefined {
+  const result = schema.safeParse(payload);
 
   if (result.success) {
     return result.data;
