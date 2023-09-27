@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2018", //specify ECMAScript target version
+    "module": "commonjs", //specify module code generation
+    "rootDir": "./src", //location of input files
+    "outDir": "./dist", //location of output files
+    "strict": true, //enable all strict type-checking options
+    "esModuleInterop": true, //enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true, //skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true //disallow inconsistently-cased references to the same file
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules" //files to be excluded from compilation
+  ]
+}
