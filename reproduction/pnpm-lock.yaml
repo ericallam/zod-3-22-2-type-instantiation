@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   safe-parse-payload:
-    specifier: 1.0.5
-    version: 1.0.5
+    specifier: 1.0.6
+    version: 1.0.6
   ts-node:
     specifier: ^10.9.1
     version: 10.9.1(@types/node@20.7.0)(typescript@5.2.2)
@@ -15,8 +15,8 @@ dependencies:
     specifier: ^5.2.2
     version: 5.2.2
   zod:
-    specifier: 3.22.2
-    version: 3.22.2
+    specifier: 3.21.4
+    version: 3.21.4
 
 packages:
 
@@ -91,10 +91,10 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: false
 
-  /safe-parse-payload@1.0.5:
-    resolution: {integrity: sha512-HqJ+bWL9NT2YK5gFX3nNK/M+lgcYQHNG0FW15bPdtaS3SsMSpVBulOpDarH01A+yI0UU9DncQNS0cmTjzkHKmw==}
+  /safe-parse-payload@1.0.6:
+    resolution: {integrity: sha512-0Zq2RTbELwRff1TjCJDkZu8L29XV7T5YcbnNCips9ohk3reCoo5irdCFmD8tynW2FrgJdjpIujSojEhHjeq/0g==}
     dependencies:
-      zod: 3.21.4
+      zod: 3.22.2
     dev: false
 
   /ts-node@10.9.1(@types/node@20.7.0)(typescript@5.2.2):

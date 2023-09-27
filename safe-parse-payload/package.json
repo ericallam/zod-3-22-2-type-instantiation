@@ -1,6 +1,6 @@
 {
   "name": "safe-parse-payload",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is a package published in an attempt to reproduce the following Zod issue: https://github.com/colinhacks/zod/issues/2697",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Eric Allam",
   "license": "ISC",
   "dependencies": {
-    "zod": "3.21.4"
+    "zod": "3.22.2"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
