@@ -9,10 +9,10 @@ import {
 const schema = z.object({ id: z.string() });
 
 // safeParsePayload uses z.output<T>
-const payload = await safeParsePayload(schema, { id: "123" });
+const payload = safeParsePayload(schema, { id: "123" });
 
 // safeParsePayloadInfer uses z.infer<T>
-const payload2 = await safeParsePayloadInfer(schema, { id: "123" });
+const payload2 = safeParsePayloadInfer(schema, { id: "123" });
 
 // safeParsePayloadVariant uses z.Schema<T> and will cause the "Type instantiation is excessively deep and possibly infinite" error
 const payload3 = safeParsePayloadVariant(schema, { id: "123" });
